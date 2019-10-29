@@ -28,6 +28,7 @@ func main() {
 		fmt.Println(x)
 	case y := <- chan2:
 		fmt.Println(y)
-
+	default:
+		fmt.Println("Default case executed")
 	}
 }
